@@ -94,8 +94,6 @@ let number = Number(prompt("Введите целое положительное
 let units = number % 10;
 let tens = Math.floor((number % 100) / 10);
 let hundreds = Math.floor((number % 1000) / 100);
-if (number > 0) {
-  alert(
-    `В числе ${number} количество сотен: ${hundreds}, десятков: ${tens}, единиц:${units}`
-  );
-}
+alert(
+  `В числе ${number} количество сотен: ${hundreds}, десятков: ${tens}, единиц:${units}`
+);
