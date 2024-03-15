@@ -15,15 +15,15 @@
 // let inputNegative = prompt("Введите oтрицательное число");
 // positive = Number(inputPositive);
 // negative = Number(inputNegative);
-// if ((positive > 0) & (negative < 0)) {
+// if ((positive > 0) && (negative < 0)) {
 //   alert("Все значения верные");
 // } else {
-//   alert("Одно или более значений некорректно.");
+//   console.log("Одно или более значений некорректно");
 // }
 let positive = Number(prompt("Введите положительное число"));
 let negative = Number(prompt("Введите oтрицательное число"));
-alert(
-  (positive > 0) & (negative < 0)
+console.log(
+  positive > 0 && negative < 0
     ? "Все значения верные"
     : "Одно или более значений некорректно."
 );
@@ -61,11 +61,11 @@ let N1 = dayNumber;
 if (N1 < 1 || N1 > 31) {
   console.log("Неверное значение");
 } else if (N1 >= 1 && N1 <= 10) {
-  console.log(`Число ${N1} попадает в 1 декаду месяцa`);
-} else if (N1 >= 11 && N1 <= 21) {
-  console.log(`Число ${N1} попадает вo 2 декаду месяцa`);
+  console.log(`Число ${N1} попадает в 1 декаду месяца`);
+} else if (N1 >= 11 && N1 <= 20) {
+  console.log(`Число ${N1} попадает во 2 декаду месяца`);
 } else if (N1 >= 21 && N1 < 32) {
-  console.log(`Число ${N1} попадает в 3 декаду месяцa`);
+  console.log(`Число ${N1} попадает в 3 декаду месяца`);
 }
 
 /*  4
@@ -90,7 +90,7 @@ if (N1 < 1 || N1 > 31) {
 Уточнение: Пользователь всегда вводит корректное положительное целое число.
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
-let number = Number(prompt("Введите целое число"));
+let number = Number(prompt("Введите целое положительное число"));
 let units = number % 10;
 let tens = Math.floor((number % 100) / 10);
 let hundreds = Math.floor((number % 1000) / 100);
