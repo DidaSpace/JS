@@ -58,13 +58,13 @@ console.log(money ? "Скоро будем у вас" : "До свидания")
 */
 
 const dayNumber = Number(prompt("Введите день месяца"));
-if ((Number.isInteger(dayNumber) || dayNumber>1 || N1 > 31) {
+if (Number.isInteger(dayNumber) && dayNumber > 1 && dayNumber > 31) {
   console.log("Неверное значение");
 } else if (dayNumber <= 10) {
   console.log(`Число ${dayNumber} попадает в 1 декаду месяца`);
 } else if (dayNumber <= 20) {
   console.log(`Число ${dayNumber} попадает во 2 декаду месяца`);
-} else if (dayNumber< 32) {
+} else if (dayNumber < 32) {
   console.log(`Число ${dayNumber} попадает в 3 декаду месяца`);
 }
 
