@@ -12,8 +12,8 @@
 в консоль "Одно или более значений некорректно.".
 */
 
-//const inputPositive = prompt("Введите положительное число");
-// const inputNegative = prompt("Введите oтрицательное число");
+//const inputPositive = Number(prompt("Введите положительное число"));
+// const inputNegative = Number(prompt("Введите oтрицательное число"));
 // positive = Number(inputPositive);
 // negative = Number(inputNegative);
 // if ((positive > 0) && (negative < 0)) {
