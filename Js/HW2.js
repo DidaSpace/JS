@@ -1,4 +1,3 @@
-"use strict";
 /* 1
 Создать переменные positive и negative, в которые пользователь вводит с 
 клавиатуры значения. Нужно попросить пользователя ввести положительное число в 
@@ -21,27 +20,27 @@
 // } else {
 //   console.log("Одно или более значений некорректно");
 // }
-const positive = Number(prompt("Введите положительное число"));
-const negative = Number(prompt("Введите oтрицательное число"));
-console.log(
-  positive > 0 && negative < 0
-    ? "Все значения верные"
-    : "Одно или более значений некорректно."
-);
+// const positive = Number(prompt("Введите положительное число"));
+// const negative = Number(prompt("Введите oтрицательное число"));
+// console.log(
+//   positive > 0 && negative < 0
+//     ? "Все значения верные"
+//     : "Одно или более значений некорректно."
+// );
 
 /* 2
 Необходимо переписать данный код, используя тернарный оператор.
 Если есть какие-либо недочеты в коде, можете их исправить.
 */
 
-const money = confirm("У вас много денег?");
+// const money = confirm("У вас много денег?");
 // if (money) {
 //   console.log("Скоро будем у вас ;)");
 // } else {
 //   console.log("До свидания.");
 // }
 
-console.log(money ? "Скоро будем у вас" : "До свидания");
+// console.log(money ? "Скоро будем у вас" : "До свидания");
 
 /* 3
 Необходимо создать переменную dayNumber, в которую пользователь должен ввести 
@@ -57,16 +56,16 @@ console.log(money ? "Скоро будем у вас" : "До свидания")
 число 32.
 */
 
-const dayNumber = Number(prompt("Введите день месяца"));
-if (Number.isInteger(dayNumber) && dayNumber > 1 && dayNumber > 31) {
-  console.log("Неверное значение");
-} else if (dayNumber <= 10) {
-  console.log(`Число ${dayNumber} попадает в 1 декаду месяца`);
-} else if (dayNumber <= 20) {
-  console.log(`Число ${dayNumber} попадает во 2 декаду месяца`);
-} else if (dayNumber < 32) {
-  console.log(`Число ${dayNumber} попадает в 3 декаду месяца`);
-}
+// const dayNumber = Number(prompt("Введите день месяца"));
+// if (dayNumber > 32 && dayNumber < 1) {
+//   console.log("Неверное значение");
+// } else if (dayNumber > 1dayNumber <= 10 && ) {
+//   console.log(`Число ${dayNumber} попадает в 1 декаду месяца`);
+// } else if (dayNumber <= 20) {
+//   console.log(`Число ${dayNumber} попадает во 2 декаду месяца`);
+// } else if (dayNumber < 32) {
+//   console.log(`Число ${dayNumber} попадает в 3 декаду месяца`);
+// }
 
 /*  4
 Необязательное задание.
@@ -90,10 +89,23 @@ if (Number.isInteger(dayNumber) && dayNumber > 1 && dayNumber > 31) {
 Уточнение: Пользователь всегда вводит корректное положительное целое число.
 Подсказка: Возможно, вам понадобится округление чисел и оператор %.
 */
-const number = Number(prompt("Введите целое положительное число"));
-const units = number % 10;
-const tens = Math.floor((number % 100) / 10);
-const hundreds = Math.floor((number % 1000) / 100);
-alert(
-  `В числе ${number} количество сотен: ${hundreds}, десятков: ${tens}, единиц:${units}`
-);
+// const number = Number(prompt("Введите целое положительное число"));
+// const units = number % 10;
+// const tens = Math.floor((number % 100) / 10);
+// const hundreds = Math.floor((number % 1000) / 100);
+// alert(
+//   `В числе ${number} количество сотен: ${hundreds}, десятков: ${tens}, единиц:${units}`
+// );
+
+const dayNumber = Number(prompt("Введите день месяца"));
+if (!Number.isInteger(dayNumber)) {
+  console.log("Неверное значение");
+} else if (dayNumber < 1 || dayNumber > 31) {
+  console.log("Неверное значение");
+} else if (dayNumber <= 10) {
+  console.log(`Число ${dayNumber} попадает в 1 декаду месяца`);
+} else if (dayNumber <= 20) {
+  console.log(`Число ${dayNumber} попадает во 2 декаду месяца`);
+} else if (dayNumber < 32) {
+  console.log(`Число ${dayNumber} попадает в 3 декаду месяца`);
+}
