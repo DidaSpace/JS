@@ -20,8 +20,6 @@ console.log(cube(5));
 сообщение "Размер заработной платы за вычетом налогов равен N."
 */
 
-// Здесь пишем решение, данный комментарий необходимо стереть.
-
 const number = prompt("Введите число");
 if (isNaN(number)) {
   console.log("Значение задано неверно");
@@ -86,18 +84,3 @@ console.log(multip(3, 6));
 
 const div = (x, y) => x / y;
 console.log(div(3, 6));
-// Реализовать функцию round5, которой передается целое число, функция должна
-//   возвращать ближайшее целое число к тому что было передано, без остатка делящееся
-//   на 5.
-function round5(val) {
-  return Math.isIntecer(val) / 5;
-}
-
-console.log(round5(0)); // 0
-console.log(round5(2)); // 0
-console.log(round5(3)); // 5
-console.log(round5(11)); // 10
-console.log(round5(14)); // 15
-console.log(round5(50)); // 50
-console.log(round5(-2)); // 0
-console.log(round5(-3)); // -5
