@@ -12,7 +12,7 @@
 */
 
 let tempCelsius = +prompt("Введите значение температуры по Цельсию");
-let celsiusToFahrenheit = (9 / 5) * tempCelsius + 32;
+let celsiusToFahrenheit = Math.round((9 / 5) * tempCelsius) + 32;
 
 alert(`Цельсий: {${tempCelsius}}, Фаренгейт: {${celsiusToFahrenheit}}`);
 
