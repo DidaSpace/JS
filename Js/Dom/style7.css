@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+.navigation {
+    background-color: #111111;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 42px;
+    margin: 18px 0;
+}
+
+.right__list {
+    position: relative;
+}
+
+.cart_counter {
+    width: 19px;
+    height: 19px;
+    background-color: #F16D7F;
+    border-radius: 50%;
+    position: absolute;
+    bottom: 27px;
+    right: 35px;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+.featured__block__title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.featured__title {
+    font-size: 30px;
+    font-family: Lato;
+    font-weight: 400;
+    line-height: 36px;
+}
+
+.featured__text {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9F9F9F;
+    margin: 6px;
+}
+
+.featured__block__card {
+    margin-top: 48px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #F8F8F8;
+    position: relative;
+}
+
+.add__to__cart {
+    position: absolute;
+    top: 30%;
+    left: 33%;
+    width: 140px;
+    height: 45px;
+    background: none;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    transform: opacity 0.3 ease;
+    cursor: pointer;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.card:hover .add__to__cart {
+    opacity: 1;
+}
+
+.card:hover .img__card {
+    background-color: #3A3838DB;
+    filter: brightness(0.4);
+    opacity: 0.8; 
+}
+
+.title__card {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 13px;
+    max-width: 150px;
+    padding: 25px 0 0 16px;    
+}
+
+.text__card {
+    font-family: Lato;
+    font-weight: 300;
+    font-size: 14px;
+    max-width: 315px;
+    color: #5D5D5D;
+    padding: 16px 30px 0 16px;
+}
+
+.price__card {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 16px;
+    max-width: 60px;
+    color: #F16D7F;
+    padding: 16px 0 24px 16px;
+}
+
+
+
+.visible__hidden {
+    display: none;
+}
+
+.btn_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 48px 0;
+}
+
+.btn__add__card {
+    width: 215px;
+    height: 50px;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    color: #F26376;
+    border: 1px solid #FF6A6A;
+    background-color: #ffffff;
+  
+}
+
+.btn__add__card:hover {
+    cursor: pointer;
+}
+
+.btn__add__card:active {
+    background-color: #F16D7F;
+    color: #ffffff;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #FF6A6A;
+}
+
+.feature__block {
+    background-color: rgba(34, 34, 36, 1);
+    height: 340px;
+}
+
+
+/* Корзина */
+
+.cart_container {
+    display: none;
+    margin-bottom: 100px;
+}
+
+.title {
+    text-align: center;
+    align-items: center;
+    margin-top: 96px;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 30px;
+    color: #222222;
+}
+
+.empty__cart__message {
+    text-align: center;
+    align-items: center;
+    margin-top: 100px;
+    color: red;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 30px;
+}
+
+#cartItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card__product {
+    display: flex;
+    border: 1px solid rgba(234, 234, 234, 1);
+    box-shadow: 17px 19px 24px 0 rgba(0, 0, 0, 0.13);
+}
+
+.cart__title  {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 24px;
+    max-width: 150px;
+    width: 262px;
+    height: 58px;   
+    
+}
+
+.cart__price {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    color: #575757;
+    margin-top: 42px;
+}
+
+.cart__price__span {
+    margin-left: 10px;
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    color: #EF5B70;
+}
+
+.cart__color {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    color: #575757;
+    margin-top: 6px;
+}
+
+.cart__color__span {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    color: #6F6E6E;
+    margin-left: 10px;
+}
+
+.cart__size {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    color: #575757;
+    margin-top: 6px;
+}
+
+.cart__size__span {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    color: #6F6E6E;
+    margin-left: 10px;
+}
+
+.cart__quantity {
+    font-family: Lato;
+    font-weight: 400;
+    font-size: 22px;
+    color: #575757;
+    margin-top: 6px;
+}
+
+.cart__input {
+    width: 44px;
+    text-align: center;
+    align-items: center;
+    margin-left: 10px;
+}
+
+.card__info_product {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    margin-left: 31px;
+    margin-top: 22px;
+    position: relative;
+}
+
+.btn_delite {
+    background: none;
+    background-image: url(img/delite.svg);
+    width: 19px;
+    height: 19px;
+    border: none;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+}
