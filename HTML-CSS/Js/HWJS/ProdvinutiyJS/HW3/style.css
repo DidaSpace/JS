@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  #products-container div, #reviews-list li {
+    margin: 5px 0;
+  }
+  
+  button {
+    margin-left: 10px;
+  }
+  
