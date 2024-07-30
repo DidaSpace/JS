@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style scoped>
+      .product-details {
+        font-family: Arial, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <product-details></product-details>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+    <script>
+      Vue.component("product-details", {
+        template: `
+          <div class="product-details">
+            <h1>{{ product.name }}</h1>
+            <p>{{ formattedPrice }}</p>
+            <p>{{ product.available ? 'Available' : 'Out of stock' }}</p>
+          </div>
+        `,
+        data() {
+          return {
+            product: {
+              name: "Sample Product",
+              price: 99.99,
+              available: true,
+            },
+          };
+        },
+        computed: {
+          formattedPrice() {
+            return `$${this.product.price.toFixed(2)}`;
+          },
+        },
+      });
+
+      new Vue({
+        el: "#app",
+      });
+    </script>
+  </body>
+</html>
